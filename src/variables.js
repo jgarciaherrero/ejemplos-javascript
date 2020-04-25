@@ -1,16 +1,24 @@
-var variableConVar = 1;
-let variableConLet = 1;
-const constante = 1;
+var variableConVar = 'Declarada con var   fuera del bloque';
+let variableConLet = 'Declarada con let   fuera del bloque';
+const constante = 'Declarada con const fuera del bloque';
 
-console.log('                    V L C');
-console.log('  Antes del ámbito:', variableConVar, variableConLet, constante);
+console.log('Antes del ámbito:');
+console.log('  variableConVar:', variableConVar);
+console.log('  variableConLet:', variableConLet);
+console.log('  constante     :', constante);
 
 {
-    var variableConVar = 2;
-    let variableConLet = 2;
-    const constante = 2;
+    var variableConVar = 'Declarada con var   dentro del bloque';
+    let variableConLet = 'Declarada con let   dentro del bloque';
+    const constante = 'Declarada con const dentro del bloque';
 
-    console.log('      En el ámbito:', variableConVar, variableConLet, constante);
+    console.log('En el ámbito');
+    console.log('  variableConVar:', variableConVar);
+    console.log('  variableConLet:', variableConLet);
+    console.log('  constante     :', constante);
 }
 
-console.log('Despues del ámbito:', variableConVar, variableConLet, constante);
+console.log('Después del ámbito');
+console.log('  variableConVar:', variableConVar);
+console.log('  variableConLet:', variableConLet);
+console.log('  constante     :', constante);
